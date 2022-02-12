@@ -11,16 +11,17 @@
 <a href="#">Link: this should not track</a>
 
 <!-- Onboarding wrong -->
-<h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Facescan','Fg_Release':'GIADA'})">1 Onboarding - IMP</h2>
-// Onboarding correct
-<h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section2':'FrameGenius:Facescan','Fg_Release':'GIADA'})">1 Onboarding - IMP</h2>
+<h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Facescan','Fg_Release':'GIADA'})">1 Onboarding - IMP - WRONG</h2>
+<!-- Onboarding correct -->
+<h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section2':'FrameGenius:Facescan','Fg_Release':'GIADA'})">1 Onboarding - IMP - RIGHT</h2>
    
 <!-- Facescan   --> 
 <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Onboarding','Fg_Release':'GIADA'})">2 FaceScan - IMP</h2>
    
 <!-- Landing  -->
 <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Landing','Fg_Release':'GIADA','Page_UserFace':'FaceShape=round, FaceLength=long, HairColor=red, EyeColor=brown'})">3 Landing - IMP</h2>    
-   <a onclick="tealium_data2track.push({id:'Click', Tracking_Type:'link', data_element_id:'X_X_FrameGenius_Profile_Open'})" href="#">Link: complete your profile</a>
+   <a onclick="tealium_data2track.push({id:'Click', Tracking_Type:'hiddenaction', data_element_id:'X_X_FrameGenius_Profile_Open'})" href="#">Link: complete your profile</a>
+   <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Profile','Fg_Release':'GIADA','Page_UserFace':'FaceShape=round, FaceLength=long, HairColor=red, EyeColor=brown'})">Profile - IMP</h2>       
    
 <!-- FitGlasses  -->   
 <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'FitGlasses','Fg_Release':'GIADA','Take_Mode' : 'VM','Events_FGFit':'1','Page_UserFace':'FaceShape=round,FaceLength=long,HairColor=red,EyeColor=brown','Page_UserStyle':'FrameCat=Eyeglasses,Style=classic','Products':{'RB123456':{'Category':'OPTICS','Type':'STD','FrameType':'STD','Fg_BestMatch':'0'}}})})">4 FitGlasses - IMP</h2>        
