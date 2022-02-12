@@ -10,19 +10,19 @@
 <div data-analytics_available_call="0" border="1">
 <a href="#">Link: this should not track</a>
 
-// Onboarding wrong
+<!-- Onboarding wrong -->
 <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Facescan','Fg_Release':'GIADA'})">1 Onboarding - IMP</h2>
 // Onboarding correct
 <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section2':'FrameGenius:Facescan','Fg_Release':'GIADA'})">1 Onboarding - IMP</h2>
    
-// Facescan   
+<!-- Facescan   --> 
 <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Onboarding','Fg_Release':'GIADA'})">2 FaceScan - IMP</h2>
    
-// Landing 
+<!-- Landing  -->
 <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Landing','Fg_Release':'GIADA','Page_UserFace':'FaceShape=round, FaceLength=long, HairColor=red, EyeColor=brown'})">3 Landing - IMP</h2>    
    <a onclick="tealium_data2track.push({id:'Click', Tracking_Type:'link', data_element_id:'X_X_FrameGenius_Profile_Open'})" href="#">Link: complete your profile</a>
    
-// FitGlasses    
+<!-- FitGlasses  -->   
 <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'FitGlasses','Fg_Release':'GIADA','Take_Mode' : 'VM','Events_FGFit':'1','Page_UserFace':'FaceShape=round,FaceLength=long,HairColor=red,EyeColor=brown','Page_UserStyle':'FrameCat=Eyeglasses,Style=classic','Products':{'RB123456':{'Category':'OPTICS','Type':'STD','FrameType':'STD','Fg_BestMatch':'0'}}})})">4 FitGlasses - IMP</h2>        
    <button onclick="tealium_data2track.push({id:'Click', Tracking_Type:'link', data_element_id:'X_X_FrameGenius_Take_TryOn', data_analytics_available_call='1'})">TryOn</button>
    <button onclick="tealium_data2track.push({id:'Click', Tracking_Type:'link', data_element_id:'X_X_FrameGenius_Take_Pic', data_analytics_available_call='1'})">Picture</button>
@@ -31,7 +31,7 @@
    <h3 onclick="tealium_data2track.push({id:'Event', Events_ProdFavAdd: '1', Products:{'RB123456':{'Category':'OPTICS','Type':'STD','FrameType':'STD','Fg_BestMatch':'0'})">Add To Fav event</h3>
    <h3 onclick="tealium_data2track.push({id:'Event', Events_FGFit:'1',Take_Mode:'VM' Products:{'RB123456':{'Category':'OPTICS','Type':'STD','FrameType':'STD','Fg_BestMatch':'0'})">Product change event</h3>   
    
- // Application Menu
+<!-- Application Menu -->
 
 
 </div>
