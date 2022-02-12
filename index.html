@@ -4,12 +4,20 @@
 </head>
 <body>
 <h1>Home<h1>
+
 <button data-element-id="X_X_MainNav_FrameGenius" onclick="tealium_data2track.push({'id': 'Overlay-View', 'Page_Section2'='FrameGenius:Onboarding'})">Open FrameGenius</button>
+   
+<div data_analytics_available_call="0" border="1">
+<a href="#">This link should not track</a>
 
-<h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Onboarding','Fg_Release':'GIADA'})">Impression 1 FaceScan</h2>
-
-<h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section2':'FrameGenius:Playlist'})">Impression 2 Playlist</h2>
-
+<h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Facescan','Fg_Release':'GIADA'})">Impression 1 Onboardin</h2>
+   
+<h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Onboarding','Fg_Release':'GIADA'})">Impression 2 FaceScan</h2>
+   
+<h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Landing','Fg_Release':'GIADA'})">Impression 3 Landing</h2>   
+   <a onclick="tealium_data2track.push({id:'Click', Tracking_Type:'link', data_element_id:'X_X_FrameGenius_Profile_Open'});" href="#">Complete your profile link</a>
+   
+   
 <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section2':'FrameGenius:FitGlasses'})">Impression 3 FitGlasses</h2>
    <button data-element-id="X_X_FrameGenius_Condividi">SocialShare</button>
 
@@ -19,6 +27,7 @@
 <button data-element-id="X_X_FrameGenius_CartAdd">Open FrameGenius</button>
 
 <h3 onclick="tealium_data2track.push({'id': 'Event', 'Events_CartAdd':'1'})">>> Event CartAdd</h3>
+</div>
    
 <!-- Tealium utag_data Object of Objects -->
 <script type="text/javascript"> 
