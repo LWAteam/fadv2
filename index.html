@@ -10,8 +10,10 @@
 <div data-analytics_available_call="0" border="1">
 <a href="#">Link: this should not track</a>
 
-// Onboarding
+// Onboarding wrong
 <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Facescan','Fg_Release':'GIADA'})">1 Onboarding - IMP</h2>
+// Onboarding correct
+<h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section2':'FrameGenius:Facescan','Fg_Release':'GIADA'})">1 Onboarding - IMP</h2>
    
 // Facescan   
 <h2 onclick="tealium_data2track.push({'id': 'Impression', 'Page_Section1': 'FrameGenius','Page_Section2':'Onboarding','Fg_Release':'GIADA'})">2 FaceScan - IMP</h2>
